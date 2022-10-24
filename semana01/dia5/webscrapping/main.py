@@ -7,7 +7,7 @@ URL_SBS = "https://www.sbs.gob.pe/app/pp/sistip_portal/paginas/publicacion/tipoc
 requestSBS = requests.get(URL_SBS)
 
 if(requestSBS.status_code == 200):
-    #exitoso
+    #exitoso    
     #print(requestSBS.text)
     #parseamos el request con bs4
     html = BeautifulSoup(requestSBS.text,'html.parser')
